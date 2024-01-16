@@ -14,7 +14,7 @@ export default class Account {
         return this._name
     }
     public set name(value: string) {
-            this._name = value
+        this._name = value
     }
     private _balance: number
     public get balance(): number {
@@ -62,16 +62,3 @@ export default class Account {
 
 }
 
-try {
-    let name = "Ngoc";
-    let accountNumber = 999999
-    let balance = 500000;
-    let user = new Account(accountNumber,name,balance);
-    console.log(user.deposit(5000));
-    console.log(user.withdraw(5000,0.1));
-    console.log(user.addInterest());
-    console.log(user.toStringAccount());
-    
-} catch (error) {
-    
-}
