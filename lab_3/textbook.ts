@@ -1,4 +1,6 @@
-class TextBook extends Book {
+import { Book } from "./book";
+
+export class TextBook extends Book {
   private _isNew: boolean = true;
   public get isNew(): boolean {
     return this._isNew;

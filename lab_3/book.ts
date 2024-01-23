@@ -1,5 +1,5 @@
 //Mã sách, ngày nhập, đơn giá, số lượng, nhà xuất bản
-class Book {
+export class Book {
   private _id: string;
   public get id(): string {
     return this._id;
