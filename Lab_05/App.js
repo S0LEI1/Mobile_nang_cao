@@ -4,14 +4,16 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Cau1 from './screen/Cau1';
 import Cau2 from './screen/Cau2'
+import Cau3 from './screen/Cau3';
 const Stack = createNativeStackNavigator();
 
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName='Cau2'>
+      <Stack.Navigator initialRouteName='Cau3'>
         <Stack.Screen name="Home" component={Cau1} />
         <Stack.Screen name="Cau2" component={Cau2} />
+        <Stack.Screen name='Cau3' component={Cau3} />
       </Stack.Navigator>
     </NavigationContainer>
   );
