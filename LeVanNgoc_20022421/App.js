@@ -18,8 +18,8 @@ export default function App() {
       {/* <Cau2 /> */}
       {/* <Cau2B /> */}
       {/* <Cau2C /> */}
-      {/* <Cau3A /> */}
-      < Cau3B />
+      <Cau3A />
+      {/* < Cau3B /> */}
     </View>
   );
 }

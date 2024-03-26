@@ -29,12 +29,6 @@ const Cau3B = () => {
       useNativeDriver: false,
     }).start();
   };
-  const reset = () => {
-    Animated.spring(position, {
-      toValue: { x: 0, y: 0 },
-      useNativeDriver: false,
-    }).start();
-  };
   return (
     <View>
       <Animated.Image

@@ -3,11 +3,6 @@ import React, { useRef } from "react";
 
 const Cau3A = () => {
   const position = useRef(new Animated.ValueXY()).current;
-  const value = useRef(new Animated.Value(0)).current;
-    const color = value.interpolate({
-        inputRange:[0,1],
-        outputRange:["red","green"]
-    })
   const panResponder = useRef(
     PanResponder.create({
       onStartShouldSetPanResponder: () => true,
@@ -16,11 +11,6 @@ const Cau3A = () => {
           x: gesture.dx,
           y: gesture.dy,
         });
-        Animated.timing(value,{
-            toValue:1,
-            duration:3000,
-            useNativeDriver:false
-        }).start()
       },
       onPanResponderRelease: (evt, gesture) => {
         reset();
@@ -46,7 +36,7 @@ const Cau3A = () => {
           ],
           width: 100,
           height: 100,
-          backgroundColor: color,
+          backgroundColor: "red",
           borderRadius: 50,
         }}
       ></Animated.View>
