@@ -14,21 +14,21 @@ const Cau3B = () => {
         });
       },
       onPanResponderRelease: (evt, gesture) => {
-        if( gesture.dx > -width* 0.25){
-            swip()
+        if (gesture.dx > -width * 0.25 || gesture.dx < width * 0.25) {
+          swip();
         }
       },
     })
   ).current;
-  const swip = () =>{
-    Animated.spring(position,{
-        toValue:{
-            x: -width *10,
-            y:0
-        },
-        useNativeDriver:false
-    })
-  }
+  const swip = () => {
+    Animated.spring(position, {
+      toValue: {
+        x: -width * 5,
+        y: 0,
+      },
+      useNativeDriver: false,
+    }).start();
+  };
   const reset = () => {
     Animated.spring(position, {
       toValue: { x: 0, y: 0 },
@@ -50,7 +50,6 @@ const Cau3B = () => {
           ],
           width: 100,
           height: 100,
-          
         }}
       />
     </View>
