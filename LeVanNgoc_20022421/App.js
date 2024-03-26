@@ -7,6 +7,7 @@ import Cau2 from "./screen/cau2";
 import Cau2B from "./screen/cau2b";
 import Cau2C from "./screen/cau2c";
 import Cau3A from "./screen/cau3a";
+import Cau3B from "./screen/cau3b";
 
 export default function App() {
   return (
@@ -17,7 +18,8 @@ export default function App() {
       {/* <Cau2 /> */}
       {/* <Cau2B /> */}
       {/* <Cau2C /> */}
-      <Cau3A />
+      {/* <Cau3A /> */}
+      < Cau3B />
     </View>
   );
 }
